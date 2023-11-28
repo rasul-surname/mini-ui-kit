@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "lib": ["es2015", "dom"],
+    "outDir": "./dist/", // папка в которую будет компилироваться typescript
+    "sourceMap": true,
+    "declaration": true,
+  },
+  "include": ["src"], // то что включаем в компиляцию
+  "exclude": ["node_modules", "dist", "./src/stories"] // то что исключаем из компиляции
+}
