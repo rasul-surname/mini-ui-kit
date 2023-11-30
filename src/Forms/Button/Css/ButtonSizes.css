@@ -1,0 +1,21 @@
+/* BUTTON SIZES STYLES START */
+.button__size-xs {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+.button__size-sm {
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+.button__size-md {
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+.button__size-lg {
+    font-size: 18px;
+    padding: 10px 24px;
+}
+/* BUTTON SIZES STYLES END */
