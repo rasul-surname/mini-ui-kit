@@ -1,11 +1,7 @@
-export function getButtonVariant(variant, rootClasses) {
-	rootClasses.push(`button__variant-${variant}`)
+export function getVariant(component, variant, rootClasses) {
+	rootClasses.push(`${component}__variant-${variant}`)
 }
 
-export function getButtonSize(size, rootClasses) {
-	rootClasses.push(`button__size-${size}`)
-}
-
-export function getButtonColorScheme(colorScheme, variant, rootClasses) {
-	rootClasses.push(`button__variant-${variant}-${colorScheme}`)
+export function getSize(component, size, rootClasses) {
+	rootClasses.push(`${component}__size-${size}`)
 }

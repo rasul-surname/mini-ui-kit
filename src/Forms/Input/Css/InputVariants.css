@@ -1,0 +1,16 @@
+/* INPUT VARIANTS STYLES START */
+.input__variant-outline {
+    background-color: transparent;
+    border-color: #7C8A9E;
+}
+
+.input__variant-filled {
+    background-color: #EDF2F7;
+}
+
+.input__variant-flushed {
+    border-bottom: 1px solid #7C8A9E;
+}
+
+.input__variant-unstyled {}
+/* INPUT VARIANTS STYLES END */

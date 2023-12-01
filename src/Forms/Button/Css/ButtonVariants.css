@@ -5,6 +5,7 @@
     border-color: #3182CE;
     cursor: pointer;
 }
+
 .button__variant-solid:hover {
     background-color: #0d7bc9;
 }
