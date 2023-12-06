@@ -1,25 +1,31 @@
 import React, { useEffect, useState } from 'react'
+import { getVariant } from '../helpers'
 import './Css/Checkbox.css'
+import './Css/CheckboxVariants.css'
+
+export type CheckboxVariants = 'styleA' | 'styleB' | 'styleC' | 'styleD'
 
 export interface ButtonProps {
 	label: string
 	colorScheme: string
+	variant?: CheckboxVariants
 	defaultChecked?: boolean
 	isDisabled?: boolean
 }
 
-export const Checkbox = ({ label, colorScheme, defaultChecked, isDisabled, ...props }: ButtonProps) => {
+export const Checkbox = ({ label, variant = 'styleA', colorScheme, defaultChecked, isDisabled, ...props }: ButtonProps) => {
 	const [checked, setChecked] = useState(defaultChecked)
 	const rootClasses = ['checkbox']
 
 	useEffect(() => onChangeChecked(), [defaultChecked])
 
+	getVariant('checkbox', variant, rootClasses)
+
 	const onChangeChecked = () => setChecked((prev) => !prev)
 
 	return (
-		<label>
+		<label className={rootClasses.join(' ')}>
 			<input
-				className={rootClasses.join(' ')}
 				type="checkbox"
 				id={label}
 				name={label}
@@ -29,7 +35,11 @@ export const Checkbox = ({ label, colorScheme, defaultChecked, isDisabled, ...pr
 				onChange={onChangeChecked}
 				{...props}
 			/>
-			<span>{label}</span>
+			<div
+				className="checkbox__checkmark"
+				style={{ backgroundColor: colorScheme }}
+			></div>
+			<div className="checkbox__body">{label}</div>
 		</label>
 	)
 }

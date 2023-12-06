@@ -16,7 +16,6 @@ export const Default: Story = {
 	args: {
 		variant: 'solid',
 		size: 'md',
-		colorScheme: 'linkedin',
 		children: 'Нажми на меня!',
 	},
 }

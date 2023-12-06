@@ -1,7 +1,13 @@
-.checkbox:checked {
-    background-color: red;
+/* Для самого блока .checkbox */
+.checkbox,
+.checkbox::before,
+.checkbox::after {
+    box-sizing: border-box;
 }
 
-label input[type=checkbox]:disabled + span {
-    color: #7C8A9E;
+/* И для его дочерних элементов */
+.checkbox *,
+.checkbox *::before,
+.checkbox *::after {
+    box-sizing: border-box;
 }

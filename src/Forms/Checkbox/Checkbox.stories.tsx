@@ -15,6 +15,8 @@ type Story = StoryObj<ButtonProps>
 export const Default: Story = {
 	args: {
 		label: 'Нажми на меня!',
+		colorScheme: '#f7cb15',
+		variant: 'styleA',
 		defaultChecked: true,
 		isDisabled: true,
 	},
