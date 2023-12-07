@@ -1,0 +1,39 @@
+.text__size-xs {
+    font-size: 14px;
+}
+
+.text__size-sm {
+    font-size: 16px;
+}
+
+.text__size-md {
+    font-size: 18px;
+}
+
+.text__size-lg {
+    font-size: 20px;
+}
+
+.text__size-xl {
+    font-size: 24px;
+}
+
+.text__size-2xl {
+    font-size: 30px;
+}
+
+.text__size-3xl {
+    font-size: 36px;
+}
+
+.text__size-4xl {
+    font-size: 48px;
+}
+
+.text__size-5xl {
+    font-size: 60px;
+}
+
+.text__size-6xl {
+    font-size: 68px;
+}

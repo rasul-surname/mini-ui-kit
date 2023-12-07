@@ -1,0 +1,39 @@
+.heading__size-xs {
+    font-size: 14px;
+}
+
+.heading__size-sm {
+    font-size: 16px;
+}
+
+.heading__size-md {
+    font-size: 18px;
+}
+
+.heading__size-lg {
+    font-size: 20px;
+}
+
+.heading__size-xl {
+    font-size: 24px;
+}
+
+.heading__size-2xl {
+    font-size: 30px;
+}
+
+.heading__size-3xl {
+    font-size: 36px;
+}
+
+.heading__size-4xl {
+    font-size: 48px;
+}
+
+.heading__size-5xl {
+    font-size: 60px;
+}
+
+.heading__size-6xl {
+    font-size: 68px;
+}
